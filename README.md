@@ -1,4 +1,4 @@
-# Cedar Lodge Website Bootstrap
+# Website Bootstrap
 A blank node.js project for creating websited in html, css and javascript.
 
 ## Downloading and Installing

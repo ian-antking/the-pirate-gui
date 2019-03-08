@@ -1,5 +1,5 @@
 {
-  "name": "cedar-website-bootstrap",
+  "name": "hcs-edu-website-bootstrap",
   "version": "1.0.0",
   "description": "Blank html/css/js website project with Jest for testing js",
   "main": "index.html",
