@@ -14,7 +14,7 @@
 
     _randomCoord() {
       const letter = this.xAxis[Math.floor(Math.random() * this.xAxis.length)];
-      const number = Math.floor(Math.random() * this.yAxis);
+      const number = Math.ceil(Math.random() * this.yAxis);
       const coordinate = `${letter}${number}`;
       return coordinate;
     }
@@ -30,11 +30,15 @@
     }
 
     explore(coordinate = this._generateCoordinate()) {
+      if (this.explored.length >= this.yAxis ** 2) {
+        throw new Error('Game Over!');
+      }
       if (this._detectDuplicate(coordinate.toLocaleLowerCase())) {
         throw new Error('Coordinates have already been explored!');
       } else {
         this.explored.push(coordinate.toLowerCase());
       }
+      return coordinate;
     }
   }
   if (typeof module !== 'undefined' && module.exports) {

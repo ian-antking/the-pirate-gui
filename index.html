@@ -10,12 +10,21 @@
     <title>The Pirate GUIame</title>
 </head>
 <body>
-   <header></header>
-   <main>
-       <article>
-           <div id='map'>
-           </div>
-       </article>
-   </main>
+  <header></header>
+  <main>
+    <article>
+      <div id='controls' class='sidebar'>
+        <button onclick={explore()}>Go!</button>
+      </div>
+      <div id='map'>
+        <script>
+          createMap()
+        </script>
+      </div>
+      <div id='output' class='sidebar'>
+
+      </div>
+    </article>
+  </main>
 </body>
 </html>

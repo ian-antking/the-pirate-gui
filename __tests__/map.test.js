@@ -47,4 +47,10 @@ describe('Map', () => {
     map.explore('A1');
     expect(map.explored[0]).toBe('a1');
   });
+  it('throws an error when the game is over', () => {
+    for (let i = 1; i <= 7 ** 2; i += 1) {
+      map.explored.push(i);
+    }
+    expect(() => map.explore()).toThrow('Game Over!');
+  });
 });
