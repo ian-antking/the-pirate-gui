@@ -1,7 +1,7 @@
 {
-  "name": "hcs-edu-website-bootstrap",
+  "name": "the-pirate-guiame",
   "version": "1.0.0",
-  "description": "Blank html/css/js website project with Jest for testing js",
+  "description": "GUI for playting 'The Pirate Game' ",
   "main": "index.html",
   "scripts": {
     "test": "jest --verbose --coverage"

@@ -1,5 +1,5 @@
-# Website Bootstrap
-A blank node.js project for creating websited in html, css and javascript.
+# The Pirate GUI-ame
+GUI for playing "The Pirate Game"
 
 ## Downloading and Installing
 
