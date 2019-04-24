@@ -1,15 +1,51 @@
+@font-face{
+  font-family: blackPearl;
+  src: url('../../assets/fonts/BlackPearl.ttf');
+}
+
+@font-face{
+  font-family: blackGold;
+  src: url('../../assets/fonts/BlackSam\'sGold.ttf')
+}
+
+@font-face{
+  font-family: meddon;
+  src: url('../../assets/fonts/Meddon.ttf')
+}
+
 body{
   margin: 0px;
+  font-family: blackGold;
+  background-color: #1c8bc1;
 }
 
 header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
+}
+
+header h1{
+  font-family: blackPearl;
+  font-size: 3em;
 }
 
 article{
   display: flex;
   justify-content: space-between;
   height: 100%;
+}
+
+button{
+  width: 75%;
+  height: 100px;
+  border-radius: 10px;
+  font-family:  blackPearl;
+  font-size: 4em;
+  background-color: black;
+  color: white; 
+  border: 3px solid white;
 }
 
 .sidebar{
@@ -23,9 +59,10 @@ article{
 #output{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  overflow: hidden;
-  overflow-y: scroll;
+  justify-content: flex-start;
+  font-family: meddon;
+  background-color: 	#ddd417;
+  color: 	#5e2a0e;
 }
 
 .row{
@@ -53,5 +90,26 @@ article{
 }
 
 .selected-tile{
-  background-color: yellow;
+  background-color: #760a0a;
+}
+
+#output-list{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#map{
+  margin-left: -53px;
+  font-size: 2em;
+}
+
+#message-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
 }
