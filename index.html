@@ -18,9 +18,6 @@
   </header>
   <main>
     <article>
-      <div id='controls' class='sidebar'>
-        <button class="go-button" onclick={controller.handleExploreClick()}>Go!</button>
-      </div>
       <div id='map'>
         <script>
           const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
@@ -28,9 +25,9 @@
           const map = new Map(LETTERS, MAP_SQRT);
           const controller = new Controller(map);
           controller.createMap();
-        </script>
+          </script>
       </div>
-      <div id='output' class='sidebar'>
+      <div id='output' onclick={controller.handleLogClick()} class='sidebar'>
         <h3>
           Captain's Log
         </h3>
@@ -41,6 +38,9 @@
     <footer>
       <div id="message-box">
 
+      </div>
+      <div id='controls'>
+            <button class="go-button" onclick={controller.handleExploreClick()}>Go!</button>
       </div>
     </footer>
   </main>

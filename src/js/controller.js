@@ -23,6 +23,7 @@
 
     _explore() {
       try {
+        // eslint-disable-next-line max-len
         const coordinate = this.selectedTile ? this.map.explore(this.selectedTile.id) : this.map.explore();
         const tile = document.getElementById(coordinate);
         tile.classList.add('explored-tile');
@@ -103,6 +104,15 @@
         this._renderMessage('Game Over!');
       } else {
         this._explore();
+      }
+    }
+
+    handleLogClick() {
+      const log = document.getElementById('output');
+      if (log.classList.contains('focused')) {
+        log.classList.remove('focused');
+      } else {
+        log.classList.add('focused');
       }
     }
   }
