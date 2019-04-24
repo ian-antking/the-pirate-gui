@@ -1,8 +1,11 @@
 (function exportController() {
   class Controller {
     constructor(map) {
-      // this.letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
       this.map = map;
+    }
+
+    _renderMessage(message) {
+      window.alert(message);
     }
 
     createColumns(row) {
@@ -31,9 +34,13 @@
     }
 
     explore() {
-      const coordinate = this.map.explore();
-      const tile = document.getElementById(coordinate);
-      tile.className = 'explored-tile';
+      if (this.map.explored.length >= this.map.gridSize) {
+        this._renderMessage('Game Over!');
+      } else {
+        const coordinate = this.map.explore();
+        const tile = document.getElementById(coordinate);
+        tile.className = 'explored-tile';
+      }
     }
   }
 

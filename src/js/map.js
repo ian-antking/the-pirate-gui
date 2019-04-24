@@ -29,7 +29,7 @@
     }
 
     explore(coordinate = this._generateCoordinate()) {
-      if (this.explored.length >= this.yAxis ** 2) {
+      if (this.explored.length >= this.gridSize) {
         throw new Error('Game Over!');
       }
       if (this._detectDuplicate(coordinate.toLocaleLowerCase())) {
