@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556055853122" clover="3.2.0">
-  <project timestamp="1556055853122" name="All files">
-    <metrics statements="25" coveredstatements="23" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6" elements="40" coveredelements="36" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
-    <file name="map.js" path="/Users/ian/Projects/pirate-guiame/src/js/map.js">
-      <metrics statements="25" coveredstatements="23" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6"/>
+<coverage generated="1556099510779" clover="3.2.0">
+  <project timestamp="1556099510779" name="All files">
+    <metrics statements="24" coveredstatements="22" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6" elements="39" coveredelements="35" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
+    <file name="map.js" path="/home/teacher/Projects/the-pirate-gui-ame/src/js/map.js">
+      <metrics statements="24" coveredstatements="22" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="11" type="stmt"/>
+      <line num="5" count="11" type="stmt"/>
       <line num="6" count="11" type="stmt"/>
       <line num="7" count="11" type="stmt"/>
-      <line num="8" count="11" type="stmt"/>
-      <line num="12" count="222" type="stmt"/>
-      <line num="16" count="169" type="stmt"/>
-      <line num="17" count="169" type="stmt"/>
-      <line num="18" count="169" type="stmt"/>
-      <line num="19" count="169" type="stmt"/>
+      <line num="11" count="188" type="stmt"/>
+      <line num="15" count="135" type="stmt"/>
+      <line num="16" count="135" type="stmt"/>
+      <line num="17" count="135" type="stmt"/>
+      <line num="18" count="135" type="stmt"/>
+      <line num="23" count="51" type="stmt"/>
       <line num="24" count="51" type="stmt"/>
-      <line num="25" count="51" type="stmt"/>
-      <line num="26" count="169" type="stmt"/>
-      <line num="27" count="169" type="stmt"/>
-      <line num="29" count="51" type="stmt"/>
-      <line num="33" count="52" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="36" count="51" type="cond" truecount="1" falsecount="1"/>
-      <line num="37" count="0" type="stmt"/>
-      <line num="39" count="51" type="stmt"/>
-      <line num="41" count="51" type="stmt"/>
-      <line num="44" count="1" type="cond" truecount="3" falsecount="1"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
+      <line num="25" count="135" type="stmt"/>
+      <line num="26" count="135" type="stmt"/>
+      <line num="28" count="51" type="stmt"/>
+      <line num="32" count="52" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="35" count="51" type="cond" truecount="1" falsecount="1"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="51" type="stmt"/>
+      <line num="40" count="51" type="stmt"/>
+      <line num="43" count="1" type="cond" truecount="3" falsecount="1"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>

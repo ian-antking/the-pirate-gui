@@ -1,10 +1,9 @@
 (function exportMap() {
-  const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-  const MAP_SQRT = 7;
   class Map {
-    constructor() {
-      this.xAxis = LETTERS;
-      this.yAxis = MAP_SQRT;
+    constructor(xAxis, yAxis) {
+      this.xAxis = xAxis;
+      this.yAxis = yAxis;
+      this.gridSize = this.yAxis ** 2;
       this.explored = [];
     }
 

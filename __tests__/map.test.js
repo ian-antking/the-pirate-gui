@@ -1,9 +1,12 @@
 const Map = require('../src/js/map.js');
 
+const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+const MAP_SQRT = 7;
+
 describe('Map', () => {
   let map;
   beforeEach(() => {
-    map = new Map();
+    map = new Map(LETTERS, MAP_SQRT);
   });
   it('constructor returns an object', () => {
     expect(map).toBeInstanceOf(Object);
@@ -28,7 +31,7 @@ describe('Map', () => {
     expect(map._detectDuplicate('b1')).toBe(false);
   });
   it('explore will not push duplicate coordinates', () => {
-    const gridSize = 7 ** 2;
+    const gridSize = MAP_SQRT ** 2;
     for (let i = 1; i < gridSize; i += 1) {
       map.explore();
     }
@@ -48,7 +51,7 @@ describe('Map', () => {
     expect(map.explored[0]).toBe('a1');
   });
   it('throws an error when the game is over', () => {
-    for (let i = 1; i <= 7 ** 2; i += 1) {
+    for (let i = 1; i <= MAP_SQRT ** 2; i += 1) {
       map.explored.push(i);
     }
     expect(() => map.explore()).toThrow('Game Over!');
