@@ -121,8 +121,14 @@ article{
   font-size: 2em;
 }
 
-button:hover{
+.go-button:hover{
   background-color: orangered;
+}
+
+.go-button:active{
+  background-color: orangered;
+  box-shadow: 0 10px black;
+  transform: translateY(10px);
 }
 
 .map-tile:hover{
