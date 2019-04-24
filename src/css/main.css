@@ -124,6 +124,10 @@ footer{
   right: 0px;
 }
 
+#output:focused{
+ right: 0px;
+}
+
 #map{
   margin-left: -53px;
   font-size: 2em;
@@ -149,8 +153,4 @@ footer{
 
 .map-tile:hover{
   background-color: #ddd417;
-}
-
-.focused {
-  right: 0px;
 }
