@@ -8,14 +8,16 @@
     <script src="src/js/map.js"></script>
     <script src="./src/js/controller.js"></script>
     <script src="./src/js/index.js"></script>
-    <title>The Pirate GUIame</title>
+    <title>The Pirate Game</title>
 </head>
 <body>
-  <header></header>
+  <header>
+    <h1>The Pirate Game!</h1>
+  </header>
   <main>
     <article>
       <div id='controls' class='sidebar'>
-        <button onclick={controller.explore()}>Go!</button>
+        <button onclick={controller.handleExploreClick()}>Go!</button>
       </div>
       <div id='map'>
         <script>
@@ -27,9 +29,15 @@
         </script>
       </div>
       <div id='output' class='sidebar'>
-
+        <ol id='output-list'>    
+        </ol>
       </div>
     </article>
+    <footer>
+      <div id="message-box">
+
+      </div>
+    </footer>
   </main>
 </body>
 </html>

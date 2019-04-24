@@ -29,10 +29,10 @@
     }
 
     explore(coordinate = this._generateCoordinate()) {
-      if (this.explored.length >= this.gridSize) {
+      if (this.explored.length === this.gridSize) {
         throw new Error('Game Over!');
       }
-      if (this._detectDuplicate(coordinate.toLocaleLowerCase())) {
+      if (this._detectDuplicate(coordinate.toLowerCase())) {
         throw new Error('Coordinates have already been explored!');
       } else {
         this.explored.push(coordinate.toLowerCase());

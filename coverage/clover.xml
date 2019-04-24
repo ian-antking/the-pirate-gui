@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1556099510779" clover="3.2.0">
-  <project timestamp="1556099510779" name="All files">
+<coverage generated="1556100606615" clover="3.2.0">
+  <project timestamp="1556100606616" name="All files">
     <metrics statements="24" coveredstatements="22" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6" elements="39" coveredelements="35" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
     <file name="map.js" path="/home/teacher/Projects/the-pirate-gui-ame/src/js/map.js">
       <metrics statements="24" coveredstatements="22" conditionals="9" coveredconditionals="7" methods="6" coveredmethods="6"/>
@@ -9,15 +9,15 @@
       <line num="5" count="11" type="stmt"/>
       <line num="6" count="11" type="stmt"/>
       <line num="7" count="11" type="stmt"/>
-      <line num="11" count="188" type="stmt"/>
-      <line num="15" count="135" type="stmt"/>
-      <line num="16" count="135" type="stmt"/>
-      <line num="17" count="135" type="stmt"/>
-      <line num="18" count="135" type="stmt"/>
+      <line num="11" count="241" type="stmt"/>
+      <line num="15" count="188" type="stmt"/>
+      <line num="16" count="188" type="stmt"/>
+      <line num="17" count="188" type="stmt"/>
+      <line num="18" count="188" type="stmt"/>
       <line num="23" count="51" type="stmt"/>
       <line num="24" count="51" type="stmt"/>
-      <line num="25" count="135" type="stmt"/>
-      <line num="26" count="135" type="stmt"/>
+      <line num="25" count="188" type="stmt"/>
+      <line num="26" count="188" type="stmt"/>
       <line num="28" count="51" type="stmt"/>
       <line num="32" count="52" type="cond" truecount="2" falsecount="0"/>
       <line num="33" count="1" type="stmt"/>
