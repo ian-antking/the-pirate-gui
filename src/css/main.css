@@ -59,6 +59,7 @@ footer{
   border: 3px solid white;
   box-shadow: 0 20px black;
   cursor: pointer;
+  margin: 10px;
 }
 
 .sidebar{
@@ -150,5 +151,5 @@ div h3{
 }
 
 .map-tile:hover{
-  background-color: #ddd417;
+  border: 3px solid #ddd417;
 }
