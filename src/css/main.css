@@ -143,7 +143,7 @@ div h3{
   left: 0px;
 }
 
-#instructions:focus{
+#instructions:focused{
   left: 0px;
 }
 
