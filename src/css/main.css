@@ -139,14 +139,6 @@ div h3{
   font-size: 2em;
 }
 
-#message-box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1em;
-  font-family: meddon;
-}
-
 .go-button:hover{
   background-color: orangered;
 }
