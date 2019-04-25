@@ -1,4 +1,4 @@
-# The Pirate GUI-ame
+# The Pirate GUI
 GUI for playing ["The Pirate Game"](https://www.tes.com/teaching-resource/the-pirate-game-end-of-term-activity-6258063).
 
 Try it [here!](https://ian-antking.github.io/the-pirate-gui/)
