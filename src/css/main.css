@@ -172,16 +172,18 @@ div h3{
   right: 0px;
 }
 
-#output:focused{
+#output:focus{
   right: 0px;
+  outline: none;
 }
 
 #instructions:hover{
   left: 0px;
 }
 
-#instructions:focused{
+#instructions:focus{
   left: 0px;
+  outline: none;
 }
 
 #map{
@@ -198,6 +200,10 @@ div h3{
   background-color: orangered;
   box-shadow: 0 10px black;
   transform: translateY(10px);
+}
+
+.control-button:focus{
+  outline: none;
 }
 
 .map-tile:hover{
