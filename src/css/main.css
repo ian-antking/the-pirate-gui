@@ -54,11 +54,11 @@ footer{
 }
 
 .control-button{
-  width: 300px;
+  width: 200px;
   height: 75px;
   border-radius: 10%;
   font-family:  blackPearl;
-  font-size: 4em;
+  font-size: 3em;
   background-color: black;
   color: white; 
   border: 3px solid white;
