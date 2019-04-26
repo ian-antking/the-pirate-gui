@@ -5,6 +5,7 @@
       this.selectedTile = null;
       this.mapElement = document.getElementById('map');
       this.images = images;
+      this.gameOver = false;
     }
 
     _renderMessage(message) {
@@ -100,10 +101,19 @@
       }
     }
 
+    handleGameOver() {
+      const button = document.getElementById('game-button');
+      this.gameOver = true;
+      this._renderMessage('Game Over!');
+      if (this.images) this.renderImage();
+      button.innerText = 'Reset';
+    }
+
     handleExploreClick() {
-      if (this.map.explored.length >= this.map.gridSize) {
-        this._renderMessage('Game Over!');
-        if (this.images) this.renderImage();
+      if (this.gameOver) {
+        window.location.reload();
+      } else if (this.map.explored.length >= this.map.gridSize && !this.gameOver) {
+        this.handleGameOver();
       } else {
         this._explore();
       }
