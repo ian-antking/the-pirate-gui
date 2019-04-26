@@ -103,7 +103,7 @@
     handleExploreClick() {
       if (this.map.explored.length >= this.map.gridSize) {
         this._renderMessage('Game Over!');
-        this.renderImage(this.images.skull);
+        if (this.images) this.renderImage();
       } else {
         this._explore();
       }
@@ -118,7 +118,9 @@
       }
     }
 
-    renderImage(image) {
+    renderImage() {
+      const images = Object.keys(this.images);
+      const image = this.images[images[Math.floor(Math.random() * images.length)]];
       const columns = Object.keys(image.columns);
       columns.forEach(column => {
         image.columns[column].forEach((tile, index) => {
