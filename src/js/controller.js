@@ -1,9 +1,10 @@
 (function exportController() {
   class Controller {
-    constructor(map) {
+    constructor(map, images) {
       this.map = map;
       this.selectedTile = null;
       this.mapElement = document.getElementById('map');
+      this.images = images;
     }
 
     _renderMessage(message) {
@@ -102,6 +103,7 @@
     handleExploreClick() {
       if (this.map.explored.length >= this.map.gridSize) {
         this._renderMessage('Game Over!');
+        this.renderImage(this.images.skull);
       } else {
         this._explore();
       }
@@ -115,7 +117,22 @@
         log.classList.add('focused');
       }
     }
+
+    renderImage(image) {
+      const columns = Object.keys(image.columns);
+      columns.forEach(column => {
+        image.columns[column].forEach((tile, index) => {
+          const tileElement = document.getElementById(`${column}${index + 1}`);
+          if (image.columns[column][index]) {
+            tileElement.classList.add('black-tile');
+          } else {
+            tileElement.classList.add('white-tile');
+          }
+        });
+      });
+    }
   }
+
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Controller;
