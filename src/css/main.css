@@ -21,6 +21,11 @@ body{
   overflow: hidden;
 }
 
+a {
+  color: orangered;
+  text-decoration: none;
+}
+
 header{
   display: flex;
   justify-content: center;
@@ -51,7 +56,7 @@ footer{
 .go-button{
   width: 300px;
   height: 75px;
-  border-radius: 10px;
+  border-radius: 10%;
   font-family:  blackPearl;
   font-size: 4em;
   background-color: black;
@@ -60,6 +65,16 @@ footer{
   box-shadow: 0 20px black;
   cursor: pointer;
   margin: 10px;
+}
+
+#instructions .go-button{
+  width: 50px;
+  height: 25px;
+  font-size: 0.5em;
+  box-shadow: 0 5px black;
+  margin: 0;
+  transform: translateY(-10px);
+  border: 2px solid white;
 }
 
 .sidebar{
@@ -115,6 +130,14 @@ footer{
   background-color: #760a0a;
 }
 
+.black-tile{
+  background-color: black;
+}
+
+.white-tile{
+  background-color: white;
+}
+
 div h3{
   margin: 3px;
 }
@@ -166,11 +189,11 @@ div h3{
   font-size: 2em;
 }
 
-.go-button:hover{
+#controls .go-button:hover{
   background-color: orangered;
 }
 
-.go-button:active{
+#controls .go-button:active{
   background-color: orangered;
   box-shadow: 0 10px black;
   transform: translateY(10px);

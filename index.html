@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="src/js/map.js"></script>
+    <script src="src/js/image.js"></script>
     <script src="./src/js/controller.js"></script>
     <script src="./src/js/index.js"></script>
     <title>The Pirate Game</title>
@@ -26,10 +27,10 @@
           For use with <a target="_blank" href="https://www.tes.com/teaching-resource/the-pirate-game-end-of-term-aactivity-6258063">"The Pirate Game"</a> worksheets.
         </span>
         <span>
-          Click 'Go!' to randomly select a square.
+          Click <button class="go-button">GO!</button> to randomly select a square.
         </span>
         <span>
-          To select a specific square, highlight it and then click 'Go!'.
+          To select a specific square, highlight it and then click <button class="go-button">GO!</button>.
         </span>
         <span>
           Check the 'Captains Log' to see the order the squares were selected.
@@ -44,7 +45,8 @@
           const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
           const MAP_SQRT = 7;
           const map = new Map(LETTERS, MAP_SQRT);
-          const controller = new Controller(map);
+          const image = new Image();
+          const controller = new Controller(map, image);
           controller.createMap();
           </script>
       </div>
