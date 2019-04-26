@@ -20,9 +20,12 @@
   <main>
     <article>
       <div id="instructions" class="sidebar">
-        <h3>
-          Instructions
-        </h3>
+        <div id="instruction-bar">
+          <h3>
+            Instructions
+          </h3>
+          <button class="x-button" onclick="handleInfoClick()">X</button>
+        </div>
         <span>
           For use with <a target="_blank" href="https://www.tes.com/teaching-resource/the-pirate-game-end-of-term-aactivity-6258063">"The Pirate Game"</a> worksheets.
         </span>
@@ -50,17 +53,22 @@
           controller.createMap();
           </script>
       </div>
-      <div id='output' onclick={controller.handleLogClick()} class='sidebar'>
-        <h3>
-          Captain's Log
-        </h3>
+      <div id='output' class='sidebar'>
+        <div id="log-bar">
+          <button class="x-button" onclick="handleLogClick()">X</button>
+          <h3>
+            Captain's Log
+          </h3>
+        </div>
         <ol id='output-list'>    
         </ol>
       </div>
     </article>
     <footer>
       <div id='controls'>
-            <button class="control-button" id="game-button" onclick={controller.handleExploreClick()}>Go!</button>
+        <button class="control-button info-button" onclick="handleInfoClick()">Instructions</button>  
+        <button class="control-button" id="game-button" onclick="controller.handleExploreClick()">Go!</button>
+        <button class="control-button info-button" onclick="handleLogClick()">Captain's Log</button>
       </div>
     </footer>
   </main>

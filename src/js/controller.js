@@ -119,15 +119,6 @@
       }
     }
 
-    handleLogClick() {
-      const log = document.getElementById('output');
-      if (log.classList.contains('focused')) {
-        log.classList.remove('focused');
-      } else {
-        log.classList.add('focused');
-      }
-    }
-
     renderImage() {
       const images = Object.keys(this.images);
       const image = this.images[images[Math.floor(Math.random() * images.length)]];
