@@ -16,5 +16,9 @@ function handleLogClick() {
   }
 }
 
+document.body.ontouchend = (e) => {
+  e.preventDefault();
+};
+
 window.handleInfoClick = handleInfoClick;
 window.handleLogClick = handleLogClick;
