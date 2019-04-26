@@ -4,8 +4,8 @@
 }
 
 @font-face{
-  font-family: blackGold;
-  src: url('../../assets/fonts/BlackSam\'sGold.ttf')
+  font-family: blackcontrolld;
+  src: url('../../assets/fonts/BlackSam\'scontrolld.ttf')
 }
 
 @font-face{
@@ -16,7 +16,7 @@
 body{
   margin: 0px;
   height: 100vh;
-  font-family: blackGold;
+  font-family: blackcontrolld;
   background: linear-gradient(to bottom, #7ecff8 0%,#7ecff8 50%,#000000 50%,#1c8bc1 50%,#1c8bc1 100%);
   overflow: hidden;
 }
@@ -53,7 +53,7 @@ footer{
   align-items: center;
 }
 
-.go-button{
+.control-button{
   width: 300px;
   height: 75px;
   border-radius: 10%;
@@ -67,7 +67,7 @@ footer{
   margin: 10px;
 }
 
-#instructions .go-button{
+#instructions .control-button{
   width: 50px;
   height: 25px;
   font-size: 0.5em;
@@ -143,11 +143,11 @@ div h3{
 }
 
 #output{
-  right: -65vw;
+  right: -68vw;
 }
 
 #instructions{
-  left: -65vw;
+  left: -68vw;
   justify-content: space-between;
 }
 
@@ -189,11 +189,12 @@ div h3{
   font-size: 2em;
 }
 
-#controls .go-button:hover{
+#controls .control-button:hover{
   background-color: orangered;
+  cursor: default;
 }
 
-#controls .go-button:active{
+#controls .control-button:active{
   background-color: orangered;
   box-shadow: 0 10px black;
   transform: translateY(10px);
