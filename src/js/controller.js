@@ -44,6 +44,11 @@
       list.appendChild(output);
     }
 
+    _seletcImage() {
+      const images = Object.keys(this.images);
+      return this.images[images[Math.floor(Math.random() * images.length)]];
+    }
+
     createColumns(row) {
       const yAxisTile = document.createElement('div');
       yAxisTile.classList.add('axis-tile');
@@ -105,7 +110,7 @@
       const button = document.getElementById('game-button');
       this.gameOver = true;
       this._renderMessage('Game Over!');
-      if (this.images) this.renderImage();
+      if (this.images) this.renderImage(this._seletcImage());
       button.innerText = 'Reset';
     }
 
@@ -119,9 +124,7 @@
       }
     }
 
-    renderImage() {
-      const images = Object.keys(this.images);
-      const image = this.images[images[Math.floor(Math.random() * images.length)]];
+    renderImage(image) {
       const columns = Object.keys(image.columns);
       columns.forEach(column => {
         image.columns[column].forEach((tile, index) => {
@@ -135,7 +138,6 @@
       });
     }
   }
-
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = Controller;
