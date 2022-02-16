@@ -1,6 +1,6 @@
-(function exportImage() {
+(function exportImage () {
   class Image {
-    constructor() {
+    constructor () {
       this.skull = {
         columns: {
           a: [1, 1, 0, 0, 0, 0, 1],
@@ -9,9 +9,9 @@
           d: [0, 0, 1, 0, 0, 0, 0],
           e: [0, 0, 0, 1, 1, 0, 0],
           f: [1, 0, 0, 1, 1, 0, 0],
-          g: [1, 1, 0, 0, 0, 0, 1],
-        },
-      };
+          g: [1, 1, 0, 0, 0, 0, 1]
+        }
+      }
       this.key = {
         columns: {
           a: [1, 1, 1, 1, 1, 1, 1],
@@ -20,9 +20,9 @@
           d: [0, 0, 0, 0, 0, 1, 0],
           e: [1, 1, 1, 1, 0, 1, 0],
           f: [1, 1, 1, 1, 0, 0, 0],
-          g: [1, 1, 1, 1, 1, 1, 1],
-        },
-      };
+          g: [1, 1, 1, 1, 1, 1, 1]
+        }
+      }
       this.ship = {
         columns: {
           a: [1, 0, 1, 0, 1, 1, 1],
@@ -31,9 +31,9 @@
           d: [0, 0, 0, 0, 0, 0, 0],
           e: [0, 0, 1, 1, 1, 1, 1],
           f: [0, 0, 1, 1, 1, 1, 1],
-          g: [1, 0, 1, 1, 1, 1, 1],
-        },
-      };
+          g: [1, 0, 1, 1, 1, 1, 1]
+        }
+      }
       this.anchor = {
         columns: {
           a: [1, 1, 0, 0, 1, 1, 1],
@@ -42,15 +42,15 @@
           d: [0, 0, 0, 0, 0, 1, 0],
           e: [0, 1, 1, 1, 0, 0, 0],
           f: [1, 0, 1, 1, 1, 1, 1],
-          g: [1, 1, 0, 0, 1, 1, 1],
-        },
-      };
+          g: [1, 1, 0, 0, 1, 1, 1]
+        }
+      }
     }
   }
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = Image;
+    module.exports = Image
   } else {
-    window.Image = Image;
+    window.Image = Image
   }
-})();
+})()
