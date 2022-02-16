@@ -1,59 +1,59 @@
-const Map = require('../src/js/map.js');
+const Map = require('../src/js/map.js')
 
-const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-const MAP_SQRT = 7;
+const LETTERS = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+const MAP_SQRT = 7
 
 describe('Map', () => {
-  let map;
+  let map
   beforeEach(() => {
-    map = new Map(LETTERS, MAP_SQRT);
-  });
+    map = new Map(LETTERS, MAP_SQRT)
+  })
   it('constructor returns an object', () => {
-    expect(map).toBeInstanceOf(Object);
-  });
+    expect(map).toBeInstanceOf(Object)
+  })
   it('has an array of explored coordinates', () => {
-    expect(map).toHaveProperty('explored');
-  });
+    expect(map).toHaveProperty('explored')
+  })
   it('_generateCoordinate returns a coordinate', () => {
-    const coordinate = map._generateCoordinate();
-    expect(typeof coordinate).toBe('string');
-  });
+    const coordinate = map._generateCoordinate()
+    expect(typeof coordinate).toBe('string')
+  })
   it('calling explore method pushes coordinate to explored array', () => {
-    map.explore();
-    expect(map.explored.length).toBe(1);
-  });
+    map.explore()
+    expect(map.explored.length).toBe(1)
+  })
   it('_detectDuplicate returns true if duplicate detected', () => {
-    map.explored.push('a1');
-    expect(map._detectDuplicate('a1')).toBe(true);
-  });
+    map.explored.push('a1')
+    expect(map._detectDuplicate('a1')).toBe(true)
+  })
   it('_detectDuplicate returns false if no duplicate detected', () => {
-    map.explored.push('a1');
-    expect(map._detectDuplicate('b1')).toBe(false);
-  });
+    map.explored.push('a1')
+    expect(map._detectDuplicate('b1')).toBe(false)
+  })
   it('explore will not push duplicate coordinates', () => {
-    const gridSize = MAP_SQRT ** 2;
+    const gridSize = MAP_SQRT ** 2
     for (let i = 1; i < gridSize; i += 1) {
-      map.explore();
+      map.explore()
     }
-    const coordinatesSet = new Set(map.explored);
-    expect(map.explored.length).toEqual(coordinatesSet.size);
-  });
+    const coordinatesSet = new Set(map.explored)
+    expect(map.explored.length).toEqual(coordinatesSet.size)
+  })
   it('explore can add a specified coordinate to explored array', () => {
-    map.explore('mockCoord');
-    expect(map.explored[0]).toBe('mockcoord');
-  });
+    map.explore('mockCoord')
+    expect(map.explored[0]).toBe('mockcoord')
+  })
   it('explore checks specified coordinate for duplicates', () => {
-    map.explored.push('a1');
-    expect(() => map.explore('a1').toThrowError('Coordinates have already been explored!'));
-  });
+    map.explored.push('a1')
+    expect(() => map.explore('a1').toThrowError('Coordinates have already been explored!'))
+  })
   it('capital letters do not break _detectDuplicate', () => {
-    map.explore('A1');
-    expect(map.explored[0]).toBe('a1');
-  });
+    map.explore('A1')
+    expect(map.explored[0]).toBe('a1')
+  })
   it('throws an error when the game is over', () => {
     for (let i = 1; i <= MAP_SQRT ** 2; i += 1) {
-      map.explored.push(i);
+      map.explored.push(i)
     }
-    expect(() => map.explore()).toThrow('Game Over!');
-  });
-});
+    expect(() => map.explore()).toThrow('Game Over!')
+  })
+})
