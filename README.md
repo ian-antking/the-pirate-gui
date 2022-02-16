@@ -7,4 +7,7 @@ Take your end of term ["Pirate Game"](https://www.tes.com/teaching-resource/the-
 ## Downloading and Installing
 
 Clone the repository to your computer and run the install command in your terminal:
-``npm install`` 
+
+```bash
+npm install
+```
